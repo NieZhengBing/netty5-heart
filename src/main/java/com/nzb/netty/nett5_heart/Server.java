@@ -30,6 +30,7 @@ public class Server {
 					ch.pipeline().addLast(new StringDecoder());
 					ch.pipeline().addLast(new StringEncoder());
 					ch.pipeline().addLast(new ServerHandler());
+
 				}
 			});
 
